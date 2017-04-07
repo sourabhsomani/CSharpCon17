@@ -9,11 +9,11 @@ Microsoft.EntityFrameworkCore.SqlServer
 Microsoft.EntityFrameworkCore.Tools
 Microsoft.Extensions.Configuration.Json
 ```
-*Step 2 : Configure MVC Services: For that just write following code in startup.cs*
+*Step 2 : Configure MVC Services. For that just write following code in startup.cs*
 ```C#
 services.AddMvc();
 ```
-*Now add Following line of code for middleware*
+*Now add Following lines of code for middleware*
 ```C#
 loggerFactory.AddConsole();  
 
@@ -26,6 +26,7 @@ app.UseStaticFiles();//extaintion Method
 app.UseMvcWithDefaultRoute();//extaintion Method  
 ```
 *Step 3 : Create 3 Folders Models, Views, Controllers*
+
 *Step 4 : Create Item Class*
 ```C#
 public class Item  
